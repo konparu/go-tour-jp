@@ -47,10 +47,8 @@ structのフィールドは、ドット( `.` )を用いてアクセスします�
 
 structのフィールドは、structのポインタを通してアクセスすることもできます。
 
-To access the field `X` of a struct when we have the struct pointer `p` we could
-write `(*p).X`.
-However, that notation is cumbersome, so the language permits us instead to
-write just `p.X`, without the explicit dereference.
+structのフィールド`X`にアクセスするには、structのポインタ`p`を用いて`(*p).X`と書くことができます。
+この書き方は複雑なため、go言語では明示的なdereferenceを省略して`p.X`と書くことが許されています。
 
 .play moretypes/struct-pointers.go
 
